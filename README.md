@@ -85,7 +85,7 @@ node 00.xxxxx.js
 
 ---
 
-## 번역서 파일에 Jupyter 노트북 (Colab 실행 가능)에서 실행할 수 있는 파일을 추가했습니다.
+## 번역서 파일에 Jupyter 노트북 (Colab 실행 가능) 파일을 추가했습니다.
 
 각 챕터의 Python 코드와  **Jupyter 노트북(.ipynb)** 을 제공합니다.
 
