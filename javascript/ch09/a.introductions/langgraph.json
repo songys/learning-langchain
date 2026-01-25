@@ -1,0 +1,8 @@
+{
+    "node_version": "20",
+    "graphs": {
+      "chatbot_graph": "./chatbot_graph.js:graph"
+    },
+    "env": ".env",
+    "dependencies": ["."]
+  }

@@ -1,0 +1,17 @@
+{
+	"name": "learning-langchain-repo",
+	"description": "Learning LangChain O'Reilly book code examples",
+	"type": "module",
+	"author": "Nuno Campos and Mayo Oshin",
+	"scripts": {
+		"langgraph:dev": "npx @langchain/langgraph-cli dev -c ch9/js/langgraph.json --verbose"
+	},
+	"dependencies": {
+		"@langchain/community": "^0.3.32",
+		"@langchain/core": "^0.3.40",
+		"@langchain/openai": "^0.4.4",
+		"dotenv": "^16.4.7",
+		"langchain": "^0.3.19",
+		"pg": "^8.13.3"
+	}
+}
