@@ -81,4 +81,73 @@ cd javascript/ch00 # ch00는 해당 챕터 번호
 node 00.xxxxx.js
 ```
 
-자세한 내용은 도서와 소스 코드를 참고하세요. 
+자세한 내용은 도서와 소스 코드를 참고하세요.
+
+---
+
+## 번역서 파일에 Jupyter 노트북 (Colab 실행 가능)에서 실행할 수 있는 파일을 추가했습니다.
+
+각 챕터의 Python 코드와  **Jupyter 노트북(.ipynb)** 을 제공합니다.
+
+### 주요 특징
+
+| 특징 | 설명 |
+|------|------|
+| **설명** | 개념 설명 추가 |
+| **Ollama 변환** | OpenAI API 대신 무료 로컬 LLM(Ollama)을 사용하도록 변경 |
+| **Colab 호환** | Google Colab에서 바로 실행 가능한 환경 설정 셀 포함 |
+
+### 코드 변경 예시 (OpenAI → Ollama)
+
+```python
+# 원본 (OpenAI API 필요)
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+model = ChatOpenAI(model='gpt-4o-mini')
+embeddings = OpenAIEmbeddings()
+
+# 변경 (무료, 로컬 실행)
+from langchain_ollama import ChatOllama, OllamaEmbeddings
+model = ChatOllama(model='llama3.2')
+embeddings = OllamaEmbeddings(model='nomic-embed-text')
+```
+
+### 챕터별 노트북 제공 현황
+
+| 챕터 | 노트북 | 비고 |
+|------|--------|------|
+| ch01 | 제공 | LangChain 기초, 프롬프트, 체인 |
+| ch02 | 제공 | RAG 기초, 벡터 DB |
+| ch03 | 제공 | 고급 RAG, Agentic RAG |
+| ch04 | 제공 | 메모리 관리 |
+| ch05 | 제공 | LangGraph 기본 챗봇 |
+| ch06 | 제공 | 에이전트와 도구 |
+| ch07 | 제공 | 고급 패턴 (Reflection, Subgraph, Supervisor) |
+| ch08 | 제공 | 고급 기능 (Streaming, Interrupt, State) |
+| ch09 | 미제공 | LangGraph Cloud 배포 프로젝트 (아래 설명 참조) |
+| ch10 | 일부 제공 | 개념 설명 노트북만 제공 (아래 설명 참조) |
+
+### ch09에 노트북이 없는 이유
+
+ch09는 **LangGraph Cloud에 배포하기 위한 프로젝트 구조**입니다:
+- 외부 서비스 의존성 (Supabase, LangSmith)
+- `langgraph.json`, `pyproject.toml` 등 프로젝트 설정 파일 기반
+- 로컬 서버 실행 필요 (`langgraph dev`)
+
+Colab에서 단독 실행이 어려우므로 로컬 환경에서 `python/ch09/README.md`를 참조하여 실습하세요.
+
+### ch10 일부 파일에 노트북이 없는 이유
+
+ch10에는 다음 노트북이 제공됩니다:
+- `01-02.retrieve_and_grade.ipynb` - 검색 및 관련성 평가
+- `03-06.evaluation.ipynb` - LangSmith 평가 개념 설명
+
+나머지 파일들(`agent_sql_graph.py`, `rag_graph.py` 등)은 **LangSmith 연동이 필수**입니다. LangSmith는 LangChain의 평가/모니터링 플랫폼으로, API 키와 프로젝트 설정이 필요하여 Colab에서 단독 실행이 어렵습니다.
+
+### 권장 학습 방법
+
+| 챕터 | 학습 방법 |
+|------|----------|
+| ch01~ch08 | Google Colab에서 노트북 실행 |
+| ch09 | 로컬 환경에서 배포 실습 |
+| ch10 (노트북) | Colab에서 개념 학습 |
+| ch10 (평가 스크립트) | LangSmith 계정 생성 후 로컬에서 실행 |
