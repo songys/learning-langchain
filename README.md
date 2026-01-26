@@ -111,6 +111,66 @@ model = ChatOllama(model='llama3.2')
 embeddings = OllamaEmbeddings(model='nomic-embed-text')
 ```
 
+### 사용 가능한 Ollama 모델 목록
+
+노트북에서 사용하는 `llama3.2` 대신 다른 모델로 교체할 수 있습니다.
+
+#### 채팅 모델 (ChatOllama)
+
+| 모델 | 크기 | VRAM | 특징 |
+|------|------|------|------|
+| `llama3.2` | 3B | 4GB | 기본 모델, 가벼움, Colab 무료 티어 가능 |
+| `llama3.2:1b` | 1B | 2GB | 초경량, 저사양 환경용 |
+| `llama3.1` | 8B | 8GB | 더 높은 성능, 일반 GPU 필요 |
+| `llama3.1:70b` | 70B | 40GB+ | 최고 성능, 고사양 GPU 필수 (A100 등) |
+| `gemma2` | 9B | 8GB | Google 모델, 균형 잡힌 성능 |
+| `gemma2:2b` | 2B | 3GB | 경량 버전 |
+| `mistral` | 7B | 6GB | 빠른 추론 속도 |
+| `qwen2.5` | 7B | 6GB | 중국어/영어 이중 언어 |
+| `phi3` | 3.8B | 4GB | Microsoft 모델, 소형이지만 우수한 성능 |
+
+#### 한국어 특화 모델
+
+| 모델 | 크기 | VRAM | 특징 |
+|------|------|------|------|
+| `gemma2-ko` | 2B | 3GB | 한국어 미세조정, 경량 |
+| `qwen2.5:7b` | 7B | 6GB | 한국어 포함 다국어 지원 우수 |
+| `exaone` | 8B | 8GB | LG AI Research, 한국어 특화 |
+| `solar` | 10.7B | 10GB | Upstage, 한국어 성능 우수 |
+
+#### 임베딩 모델 (OllamaEmbeddings)
+
+| 모델 | 차원 | 특징 |
+|------|------|------|
+| `nomic-embed-text` | 768 | 기본 모델, 범용 |
+| `mxbai-embed-large` | 1024 | 고성능 임베딩 |
+| `bge-m3` | 1024 | 다국어 지원, 한국어 포함 |
+| `multilingual-e5-large` | 1024 | 다국어 특화 |
+
+#### 모델 변경 방법
+
+```python
+# 예시: 한국어 특화 모델 사용
+model = ChatOllama(model='exaone')  # 또는 'solar', 'qwen2.5'
+
+# 예시: 고성능 모델 사용 (고사양 GPU 필요)
+model = ChatOllama(model='llama3.1:70b')
+
+# 예시: 다국어 임베딩 사용
+embeddings = OllamaEmbeddings(model='bge-m3')
+```
+
+#### 모델 설치
+
+```bash
+# Ollama에서 모델 다운로드
+ollama pull llama3.2      # 기본 모델
+ollama pull exaone        # 한국어 특화
+ollama pull bge-m3        # 다국어 임베딩
+```
+
+> **참고**: Colab 무료 티어(T4 GPU, 15GB VRAM)에서는 8B 이하 모델을 권장합니다. 70B 이상 모델은 Colab Pro+ 또는 로컬 고사양 GPU가 필요합니다.
+
 ### 챕터별 노트북 제공 현황
 
 | 챕터 | 노트북 | 비고 |
