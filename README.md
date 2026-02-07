@@ -171,20 +171,115 @@ ollama pull bge-m3        # 다국어 임베딩
 
 > **참고**: Colab 무료 티어(T4 GPU, 15GB VRAM)에서는 8B 이하 모델을 권장합니다. 70B 이상 모델은 Colab Pro+ 또는 로컬 고사양 GPU가 필요합니다.
 
-### 챕터별 노트북 제공 현황
+### 챕터별 노트북 (Colab에서 바로 열기)
 
-| 챕터 | 노트북 | 비고 |
-|------|--------|------|
-| ch01 | 제공 | LangChain 기초, 프롬프트, 체인 |
-| ch02 | 제공 | RAG 기초, 벡터 DB |
-| ch03 | 제공 | 고급 RAG, Agentic RAG |
-| ch04 | 제공 | 메모리 관리 |
-| ch05 | 제공 | LangGraph 기본 챗봇 |
-| ch06 | 제공 | 에이전트와 도구 |
-| ch07 | 제공 | 고급 패턴 (Reflection, Subgraph, Supervisor) |
-| ch08 | 제공 | 고급 기능 (Streaming, Interrupt, State) |
-| ch09 | 미제공 | LangGraph Cloud 배포 프로젝트 (아래 설명 참조) |
-| ch10 | 일부 제공 | 개념 설명 노트북만 제공 (아래 설명 참조) |
+#### Ch01 - LangChain 기초, 프롬프트, 체인
+
+| # | 노트북 | Colab |
+|---|--------|-------|
+| 01 | LLM 기초 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/01.llm.ipynb) |
+| 02 | Chat 모델 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/02.chat.ipynb) |
+| 03 | System 메시지 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/03.system.ipynb) |
+| 04 | 프롬프트 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/04.prompt.ipynb) |
+| 05 | 프롬프트+모델 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/05.prompt-model.ipynb) |
+| 06 | Chat 프롬프트 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/06.chat-prompt.ipynb) |
+| 07 | Chat 프롬프트+모델 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/07.chat-prompt-model.ipynb) |
+| 08 | 구조화된 출력 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/08.structured.ipynb) |
+| 09 | CSV 처리 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/09.csv.ipynb) |
+| 10 | 메서드 활용 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/10.methods.ipynb) |
+| 11 | 명령형 방식 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/11.imperative.ipynb) |
+| 12 | 스트리밍 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/12.stream.ipynb) |
+| 13 | 비동기 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/13.async.ipynb) |
+| 14 | 선언형 방식 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/14.declarative.ipynb) |
+| 15 | 선언형+스트리밍 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/15.declarative-stream.ipynb) |
+| - | Ch01 통합 노트북 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch01/Learning_LangChain_Ch01.ipynb) |
+
+#### Ch02 - RAG 기초, 벡터 DB
+
+| # | 노트북 | Colab |
+|---|--------|-------|
+| 01 | 텍스트 로더 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/01.text-loader.ipynb) |
+| 02 | 웹 로더 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/02.web-loader.ipynb) |
+| 03 | PDF 로더 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/03.pdf-loader.ipynb) |
+| 04 | 재귀적 텍스트 분할 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/04.rec-text-splitter.ipynb) |
+| 05 | 코드 분할 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/05.rec-text-splitter-code.ipynb) |
+| 06 | 마크다운 분할 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/06.markdown-splitter.ipynb) |
+| 07 | 임베딩 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/07.embeddings.ipynb) |
+| 08 | 로드+분할+임베딩 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/08.load-split-embed.ipynb) |
+| 09-12 | PGVector | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/09-12.pg-vector.ipynb) |
+| 13 | 레코드 매니저 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/13.record-manager.ipynb) |
+| 14 | 멀티벡터 리트리버 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/14.multi-vector-retriever.ipynb) |
+| 15 | RAG ColBERT | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/15.rag-colbert.ipynb) |
+
+#### Ch03 - 고급 RAG, Agentic RAG
+
+| # | 노트북 | Colab |
+|---|--------|-------|
+| 01-03 | RAG 기초 임베딩 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch03/01-03.basic-rag-embedding.ipynb) |
+| 04-06 | RAG 기초 답변 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch03/04-06.basic-rag-answer.ipynb) |
+| 07-08 | 쿼리 재작성 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch03/07-08.rewrite.ipynb) |
+| 09-11 | 멀티 쿼리 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch03/09-11.multi-query.ipynb) |
+| 12-14 | RAG Fusion | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch03/12-14.rag-fusion.ipynb) |
+| 15-17 | HyDE | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch03/15-17.hyde.ipynb) |
+| 18-20 | 라우터 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch03/18-20.router.ipynb) |
+| 21 | 시맨틱 라우터 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch03/21.semantic-router.ipynb) |
+| 22 | 텍스트 메타데이터 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch03/22.text-metadata.ipynb) |
+| 23 | SQL 예제 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch03/23.sql-example.ipynb) |
+
+#### Ch04 - 메모리 관리
+
+| # | 노트북 | Colab |
+|---|--------|-------|
+| 01 | 간단한 메모리 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch04/01.simple-memory.ipynb) |
+| 02-06 | 상태 그래프 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch04/02-06.state-graph.ipynb) |
+| 07-10 | 영속 메모리 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch04/07-10.persistent-memory.ipynb) |
+| 11 | 메시지 자르기 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch04/11.trim-messages.ipynb) |
+| 12-14 | 메시지 필터링 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch04/12-14.filter-messages.ipynb) |
+| 15-16 | 메시지 병합 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch04/15-16.merge-messages.ipynb) |
+
+#### Ch05 - LangGraph 기본 챗봇
+
+| # | 노트북 | Colab |
+|---|--------|-------|
+| 01-03 | 챗봇 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch05/01-03.chatbot.ipynb) |
+| 04-05 | SQL 생성기 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch05/04-05.sql-generator.ipynb) |
+| 06-07 | 멀티 RAG | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch05/06-07.multi-rag.ipynb) |
+
+#### Ch06 - 에이전트와 도구
+
+| # | 노트북 | Colab |
+|---|--------|-------|
+| 01-02 | 기본 에이전트 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch06/01-02.basic-agent.ipynb) |
+| 03-04 | 도구 우선 실행 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch06/03-04.force-first-tool.ipynb) |
+| 05-06 | 다중 도구 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch06/05-06.many-tools.ipynb) |
+
+#### Ch07 - 고급 패턴
+
+| # | 노트북 | Colab |
+|---|--------|-------|
+| 01 | 리플렉션 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch07/01.reflection.ipynb) |
+| 02 | 서브그래프 (직접) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch07/02.subgraph-direct.ipynb) |
+| 03 | 서브그래프 (함수) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch07/03.subgraph-function.ipynb) |
+| 04-05 | 슈퍼바이저 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch07/04-05.supervisor.ipynb) |
+
+#### Ch08 - 고급 기능
+
+| # | 노트북 | Colab |
+|---|--------|-------|
+| 01-02 | 구조화된 출력 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch08/01-02.structured-output.ipynb) |
+| 03 | 스트리밍 출력 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch08/03.streaming-output.ipynb) |
+| 04 | 토큰 스트리밍 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch08/04.streaming-token.ipynb) |
+| 05-06 | 인터럽트 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch08/05-06.interrupt.ipynb) |
+| 07-11 | 상태 관리 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch08/07-11.state-management.ipynb) |
+
+#### Ch09 - LangGraph Cloud 배포 (노트북 미제공)
+
+#### Ch10 - 평가
+
+| # | 노트북 | Colab |
+|---|--------|-------|
+| 01-02 | 검색 및 관련성 평가 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch10/01-02.retrieve_and_grade.ipynb) |
+| 03-06 | LangSmith 평가 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch10/03-06.evaluation.ipynb) |
 
 ### ch09에 노트북이 없는 이유
 
