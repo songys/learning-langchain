@@ -26,7 +26,7 @@ LLM 애플리케이션, 어디서부터 시작해야 할지 막막한가요?
 
 이 책은 LLM 기반 애플리케이션 개발의 효율을 극대화하는 랭체인과, 복잡한 아키텍처 설계를 가능하게 하는 랭그래프를 중심으로, 기초 개념부터 실전 배포·운영까지 전 과정을 체계적으로 안내합니다. 
 
-직접 구현하며 익히는 실습 중심의 구성으로, 다양한 예제로  AI 애플리케이션을 즉시 개발에 적용할 수 있는 실전 역량을 길러줍니다. 특히 부록에서는 AI 에이전트와 외부 시스템을 표준 방식으로 연결하는 최신 기술, MCP를 상세히 소개하여, 빠르게 진화하는 생성 AI 기술 흐름을 반영 했습니다. 
+직접 구현하며 익히는 실습 중심의 구성으로, 다양한 예제로 AI 애플리케이션을 즉시 개발에 적용할 수 있는 실전 역량을 길러줍니다. 특히 부록에서는 AI 에이전트와 외부 시스템을 표준 방식으로 연결하는 최신 기술, MCP를 상세히 소개하여, 빠르게 진화하는 생성 AI 기술 흐름을 반영했습니다. 
 
 LLM을 활용한 애플리케이션 개발이 처음인 독자에게는 출발점을, 이미 경험이 있는 개발자에게는 한 단계 더 나아갈 수 있는 실전 감각을 제공합니다. 빠르게 변화하는 생성 AI 환경 속에서, 이 책은 랭체인의 핵심 개념부터 실전 적용까지 단계별로 안내합니다. 최신 AI 기술을 활용한 개발 역량을 키워보세요.
 
@@ -87,7 +87,7 @@ node 00.xxxxx.js
 
 ## 번역서 파일에 Jupyter 노트북 (Colab 실행 가능) 파일을 추가했습니다.
 
-각 챕터의 Python 코드와  **Jupyter 노트북(.ipynb)** 을 제공합니다.
+각 챕터의 Python 코드와 **Jupyter 노트북(.ipynb)** 을 제공합니다.
 
 ### 주요 특징
 
@@ -210,6 +210,7 @@ ollama pull bge-m3        # 다국어 임베딩
 | 13 | 레코드 매니저 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/13.record-manager.ipynb) |
 | 14 | 멀티벡터 리트리버 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/14.multi-vector-retriever.ipynb) |
 | 15 | RAG ColBERT | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/15.rag-colbert.ipynb) |
+| - | Ch02 통합 노트북 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch02/Learning_LangChain_Ch02.ipynb) |
 
 #### Ch03 - 고급 RAG, Agentic RAG
 
@@ -225,6 +226,7 @@ ollama pull bge-m3        # 다국어 임베딩
 | 21 | 시맨틱 라우터 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch03/21.semantic-router.ipynb) |
 | 22 | 텍스트 메타데이터 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch03/22.text-metadata.ipynb) |
 | 23 | SQL 예제 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch03/23.sql-example.ipynb) |
+| - | Ch03 통합 노트북 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch03/Learning_LangChain_Ch03.ipynb) |
 
 #### Ch04 - 메모리 관리
 
@@ -236,6 +238,7 @@ ollama pull bge-m3        # 다국어 임베딩
 | 11 | 메시지 자르기 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch04/11.trim-messages.ipynb) |
 | 12-14 | 메시지 필터링 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch04/12-14.filter-messages.ipynb) |
 | 15-16 | 메시지 병합 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch04/15-16.merge-messages.ipynb) |
+| - | Ch04 통합 노트북 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch04/Learning_LangChain_Ch04.ipynb) |
 
 #### Ch05 - LangGraph 기본 챗봇
 
@@ -244,6 +247,7 @@ ollama pull bge-m3        # 다국어 임베딩
 | 01-03 | 챗봇 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch05/01-03.chatbot.ipynb) |
 | 04-05 | SQL 생성기 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch05/04-05.sql-generator.ipynb) |
 | 06-07 | 멀티 RAG | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch05/06-07.multi-rag.ipynb) |
+| - | Ch05 통합 노트북 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch05/Learning_LangChain_Ch05.ipynb) |
 
 #### Ch06 - 에이전트와 도구
 
@@ -252,6 +256,7 @@ ollama pull bge-m3        # 다국어 임베딩
 | 01-02 | 기본 에이전트 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch06/01-02.basic-agent.ipynb) |
 | 03-04 | 도구 우선 실행 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch06/03-04.force-first-tool.ipynb) |
 | 05-06 | 다중 도구 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch06/05-06.many-tools.ipynb) |
+| - | Ch06 통합 노트북 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch06/Learning_LangChain_Ch06.ipynb) |
 
 #### Ch07 - 고급 패턴
 
@@ -261,6 +266,7 @@ ollama pull bge-m3        # 다국어 임베딩
 | 02 | 서브그래프 (직접) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch07/02.subgraph-direct.ipynb) |
 | 03 | 서브그래프 (함수) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch07/03.subgraph-function.ipynb) |
 | 04-05 | 슈퍼바이저 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch07/04-05.supervisor.ipynb) |
+| - | Ch07 통합 노트북 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch07/Learning_LangChain_Ch07.ipynb) |
 
 #### Ch08 - 고급 기능
 
@@ -271,6 +277,7 @@ ollama pull bge-m3        # 다국어 임베딩
 | 04 | 토큰 스트리밍 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch08/04.streaming-token.ipynb) |
 | 05-06 | 인터럽트 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch08/05-06.interrupt.ipynb) |
 | 07-11 | 상태 관리 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch08/07-11.state-management.ipynb) |
+| - | Ch08 통합 노트북 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch08/Learning_LangChain_Ch08.ipynb) |
 
 #### Ch09 - LangGraph Cloud 배포 (노트북 미제공)
 
@@ -280,6 +287,7 @@ ollama pull bge-m3        # 다국어 임베딩
 |---|--------|-------|
 | 01-02 | 검색 및 관련성 평가 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch10/01-02.retrieve_and_grade.ipynb) |
 | 03-06 | LangSmith 평가 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch10/03-06.evaluation.ipynb) |
+| - | Ch10 통합 노트북 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/songys/learning-langchain/blob/main/python/ch10/Learning_LangChain_Ch10.ipynb) |
 
 ### ch09에 노트북이 없는 이유
 
