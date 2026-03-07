@@ -106,3 +106,5 @@ coverage/
 
 .langhraph_api/
 .ragatouille
+Gemini.md
+*.bak
